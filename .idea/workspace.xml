@@ -1,8 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07695525-52ef-444e-a9cd-cf5d65513c03" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="07695525-52ef-444e-a9cd-cf5d65513c03" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/ActiveQuiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/ActiveQuiz.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersItem/AnswersItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersItem/AnswersItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/MenuToggle/MenuToggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/MenuToggle/MenuToggle.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Images/Images.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Images/Images.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/robotics.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,31 +64,110 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+        <item name="persons: table" type="531e99d1:MongoImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+        <item name="persons: table" type="531e99d1:MongoImplModel$Table" />
+        <item name="_id: column" type="a4155d2c:MongoImplModel$TableColumn" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+        <item name="persons: table" type="531e99d1:MongoImplModel$Table" />
+        <item name="__v: column" type="a4155d2c:MongoImplModel$TableColumn" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+        <item name="persons: table" type="531e99d1:MongoImplModel$Table" />
+        <item name="age: column" type="a4155d2c:MongoImplModel$TableColumn" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MongoDB" type="feb32156:DbDataSourceImpl" />
+        <item name="youtube-video: schema" type="f0f64354:MongoImplModel$Schema" />
+        <item name="persons: table" type="531e99d1:MongoImplModel$Table" />
+        <item name="isMarried: column" type="a4155d2c:MongoImplModel$TableColumn" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UFDAgq0zwvm9dM6p6l5As5FQtx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mongo" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="J:\projectPhpShtorm\react-quiz\src\img" />
+      <recent name="J:\projectPhpShtorm\react-quiz\src\components\UI\Button" />
+      <recent name="J:\projectPhpShtorm\react-quiz\src\components" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.Auth.js">
+    <configuration name="Auth.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/containers/Auth/Auth.js" working-dir="$PROJECT_DIR$/src/containers/Auth">
+      <method v="2" />
+    </configuration>
     <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -48,11 +178,38 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.Auth.js" />
         <item itemvalue="npm.eject" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",HIDE_INHERITED_FROM_OBJECT" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,7 +222,26 @@
       <option name="presentableId" value="Default" />
       <updated>1574943307383</updated>
       <workItem from="1574943308757" duration="483000" />
-      <workItem from="1574943814188" duration="1111000" />
+      <workItem from="1574943814188" duration="21014000" />
+      <workItem from="1574998997154" duration="7672000" />
+      <workItem from="1575040867649" duration="10165000" />
+      <workItem from="1575085160938" duration="2724000" />
+      <workItem from="1575089058502" duration="3044000" />
+      <workItem from="1575118422903" duration="707000" />
+      <workItem from="1575120361406" duration="32000" />
+      <workItem from="1575120411968" duration="873000" />
+      <workItem from="1575121301023" duration="2068000" />
+      <workItem from="1575123388064" duration="4044000" />
+      <workItem from="1575127457637" duration="1856000" />
+      <workItem from="1575173665452" duration="3273000" />
+      <workItem from="1575209457784" duration="1256000" />
+      <workItem from="1575214099592" duration="659000" />
+      <workItem from="1575258074730" duration="6355000" />
+      <workItem from="1575266117974" duration="159000" />
+      <workItem from="1575344612488" duration="6202000" />
+      <workItem from="1575431360511" duration="3692000" />
+      <workItem from="1575516314400" duration="79000" />
+      <workItem from="1575516410937" duration="5836000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1574944596588</created>
@@ -74,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574944596588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1574944936893</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574944936893</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +304,75 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="90" key="#Menus_and_Toolbars" timestamp="1575258713201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="90" key="#Menus_and_Toolbars/0.0.1920.1040@0.0.1920.1040" timestamp="1575258713201" />
+    <state x="1032" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575258912010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="165" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575258912010" />
+    <state x="1201" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1575348335475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1201" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575348335475" />
+    <state x="640" y="230" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1575516386898">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="230" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575516386898" />
+    <state x="1112" y="134" key="#eject" timestamp="1575348444789">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1112" y="134" key="#eject/0.0.1920.1040@0.0.1920.1040" timestamp="1575348444789" />
+    <state x="690" y="213" key="FileChooserDialogImpl" timestamp="1575435054377">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="213" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575435054377" />
+    <state width="904" height="204" key="GridCell.Tab.0.bottom" timestamp="1575523206223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="904" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575523206223" />
+    <state width="904" height="204" key="GridCell.Tab.0.center" timestamp="1575523206223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="904" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575523206223" />
+    <state width="904" height="204" key="GridCell.Tab.0.left" timestamp="1575523206223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="904" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575523206223" />
+    <state width="904" height="204" key="GridCell.Tab.0.right" timestamp="1575523206223">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="904" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575523206223" />
+    <state width="236" height="588" key="HiddenNamespacesPopup" timestamp="1575258941128">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="236" height="588" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1575258941128" />
+    <state x="448" y="0" key="SettingsEditor" timestamp="1575175258459">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="448" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575175258459" />
+    <state x="591" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1575516432121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="591" y="296" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575516432121" />
+    <state x="859" y="88" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1575348508639">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="859" y="88" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1575348508639" />
+    <state x="1052" y="92" width="776" height="856" key="dock-window-1" timestamp="1575349492205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="92" width="776" height="856" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1575349492205" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1575258442669">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575258442669" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1575266245305">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575266245305" />
   </component>
 </project>
