@@ -4,6 +4,7 @@ import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
 import is from 'is_js'
 import Images from "../../components/UI/Images/Images";
+import axios from 'axios'
 
 class Auth extends Component {
     state = {
@@ -36,11 +37,32 @@ class Auth extends Component {
         }
     };
 
-    loginHandler = () => {
-
+    loginHandler = async () => {
+        const authData = {
+            email: this.state.formControls.email.value,
+            password: this.state.formControls.password.value,
+            returnSecureToken: true
+        }
+        try {
+            const respons = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDncz4PmzwVAy6NCkjDzviCmXCRhe1sPrA', authData)
+            console.log(respons.data)
+        }catch (e) {
+            console.log(e)
+        }
     }
 
-    registerHandler = () => {
+    registerHandler = async () => {
+       const authData = {
+           email: this.state.formControls.email.value,
+           password: this.state.formControls.password.value,
+           returnSecureToken: true
+       }
+       try {
+           const respons = await axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDncz4PmzwVAy6NCkjDzviCmXCRhe1sPrA', authData)
+           console.log(respons.data)
+       }catch (e) {
+         console.log(e)
+       }
 
     }
 
@@ -88,7 +110,6 @@ isFormValid = formControls[name].valid && isFormValid
     renderInput () {
        return Object.keys(this.state.formControls).map((controlName, index) => {
            const control = this.state.formControls[controlName]
-           console.log(control)
            return (
                <Input
                key={controlName + index}
