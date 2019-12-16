@@ -3,7 +3,7 @@ import {
     FETCH_QUIZ_SUCCESS,
     FETCH_QUIZES_ERROR,
     FETCH_QUIZES_START,
-    FETCH_QUIZES_SUCCESS,
+    FETCH_QUIZES_SUCCESS, FINISH_QUIZ, QUIZ_NEXT_QUESTION, QUIZ_RETRY,
     QUIZ_SET_STATE
 } from "./actionTypes";
 
@@ -75,18 +75,34 @@ return{
 }
 }
 
+export function finishQuiz() {
+return {
+    type: FINISH_QUIZ
+}
+}
+export function quizNextQuestion(number) {
+    return {
+        type: QUIZ_NEXT_QUESTION,
+        number
+    }
+}
 
+export function retryQuiz() {
+return {
+    type: QUIZ_RETRY
+}
+}
 
 export function quizAnswerClick(answerId) {
 return (dispatch, getState) => {
-    const state = getState().quis
+    const state = getState().quiz
     if (state.answerState) {
         const key = Object.keys(state.answerState)[0]
         if (state.answerState[key] === 'success') {
             return
         }
     }
-    const question = state.quiz[state.activeQeestion]
+    const question = state.quiz[state.activeQuestion]
     const results = state.results
     if (question.rightAnswerID === answerId) {
         if (!results[question.id]) {
@@ -95,17 +111,14 @@ return (dispatch, getState) => {
         dispatch(quizSetState({[answerId]: 'success'}, results))
 
         const timeout = window.setTimeout(() => {
-            if (isQuizFinished()) {
-                console.log('Finished')
-                // this.setState({
-                //     isFinished: true
-                // })
-
+            if (isQuizFinished(state)) {
+                dispatch(finishQuiz())
             } else {
                 // this.setState({
-                //     activeQeestion: this.state.activeQeestion + 1,
+                //     activeQuestion: this.state.activeQuestion + 1,
                 //     answerState: null
                 // })
+                dispatch(quizNextQuestion(state.activeQuestion + 1))
             }
             window.clearTimeout(timeout)
         }, 1000)
@@ -118,3 +131,7 @@ return (dispatch, getState) => {
     }
 }
 }
+function isQuizFinished(state) {
+    return state.activeQuestion + 1 === state.quiz.length
+}
+
