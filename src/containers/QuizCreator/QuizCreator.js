@@ -5,7 +5,8 @@ import {creatControl, validate, validateForm} from '../../form/formFramework'
 import Input from "../../components/UI/Input/Input";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
 import Select from "../../components/UI/Select/Select";
-import axios from "../../axios/axios-quiz";
+import {connect} from "react-redux";
+import {createQuizQuestion, finishCreateQuiz} from "../../store/actions/create";
 
 function createOptionControl(number) {
     return creatControl({
@@ -30,7 +31,7 @@ function createFormControls() {
 
 class QuizCreator extends Component {
     state = {
-        quiz: [],     // массив где хроняться объекты вопросов
+
         isFormValid: false,
         rightAnswerID: 1,
         formControls: createFormControls()
@@ -42,13 +43,11 @@ class QuizCreator extends Component {
 
     addQuestionHandler = event => {
         event.preventDefault()
-        const quiz = this.state.quiz.concat()  // Пустая функция concat()  вернет копию массива this.state.quiz
-        const index = quiz.length + 1   //  номер объекта вопросав
         const {question, option1, option2, option3, option4} = this.state.formControls
 
         const questionItem = {
             question: question.value,
-            id: index,
+            id: this.props.quiz.length + 1,
             rightAnswerID: this.state.rightAnswerID,
             answers: [
                 {text: option1.value, id: option1.id},
@@ -57,13 +56,9 @@ class QuizCreator extends Component {
                 {text: option4.value, id: option4.id}
             ]
         }
-      //  console.log('questionItem ', questionItem)
-        quiz.push(questionItem)
+        this.props.createQuizQuestion(questionItem)
 
-       // console.log('quiz  после пуша', quiz)
-       // console.log('state до', this.state)
         this.setState({
-            quiz,
             isFormValid: false,
             rightAnswerID: 1,
             formControls: createFormControls()
@@ -71,22 +66,16 @@ class QuizCreator extends Component {
      //   console.log('state после', this.state)
     }
 
-    creatQuizHandler = async event => {    // делаем функцию асинхронной  дабавляя async
+    creatQuizHandler = event => {    // делаем функцию асинхронной  дабавляя async
        event.preventDefault()
-try {
-
-    console.log('отправка на сервер ', this.state.quiz)
-   await axios.post('quizes.json', this.state.quiz)   // axios вернёт промис а await распарсит промис и положит всё в переменную respons
 
     this.setState({
-        quiz: [],
         isFormValid: false,
         rightAnswerID: 1,
         formControls: createFormControls()
     })
-} catch (e) {
-    console.log(e)
-}
+    this.props.finishCreateQuiz()
+
         // axios.post('https://react-quiz-459cd.firebaseio.com/quizes.json', this.state.quiz).then(respons => {
         //     console.log(respons)
         // }).catch(error => {
@@ -169,7 +158,7 @@ try {
                         <Button
                             type={'success'}
                             onClick={this.creatQuizHandler}
-                            disabled={this.state.quiz.length === 0}
+                            disabled={this.props.quiz.length === 0}
                         >
                             Создать тест
                         </Button>
@@ -180,5 +169,17 @@ try {
         );
     }
 }
+function mapStateToProps(state) {
+ return {
+     quiz: state.create.quiz
+ }
+}
 
-export default QuizCreator;
+function mapDispatchToProps(dispatch) {
+    return {
+createQuizQuestion: item => dispatch(createQuizQuestion(item)),
+        finishCreateQuiz: () => dispatch(finishCreateQuiz())
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(QuizCreator);
